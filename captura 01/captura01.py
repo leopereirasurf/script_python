@@ -1,5 +1,3 @@
 nome= input ('seu nome porfavor')
 telefone = input ('seu telefone')
 email= input ('email valido')
-obrigado = ('obrigado porfavor verificar seu email')
-print (obrigado)
