@@ -1,8 +1,10 @@
-n1 = float(input('digite a primeira nota:'))
-n2 = float(input('digite a segunda nota:'))
-m = (n1 + n2)/2
-print ('a sua média foi: {:.1f}'.format(m))
-if m >= 6.0:
-    print('sua media foi Boa! PARAbÈNS')
-else: 
-    print ('sua media foi ruim! ESTUDE MAIS')
+from random import randint
+computador = randint (0,5) #faz comoutador pensar
+print ('-=-' *20)
+print ('vou pensar em um numero entre 0 e 5. tente advinhar...')
+print ('-=-' *20)
+jogador = int (input ('Em que numero eu Pensei?')) #jogador tenta adivinhar
+if jogador == computador:
+    print ('PARABÉNS vecê è o Grande Campeão')
+else:
+    print('GANHEI! eu pensei no numero {} e nao no {}!'.format(computador , jogador))
